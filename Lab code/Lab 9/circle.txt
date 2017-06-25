@@ -1,0 +1,14 @@
+#ifndef CIRCLE_H
+#define CIRCLE_H
+#include"point2d.h"
+class circle{
+    public:
+       double draw();
+       void setr(int r);
+       void setc(point2d &p); 
+    private:
+       point2d center;
+       double radius;
+};
+#endif
+

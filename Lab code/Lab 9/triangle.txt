@@ -1,0 +1,15 @@
+#ifndef TRIANGLE_H
+#define TRIANGLE_H
+#include"point2d.h"
+
+class triangle
+{
+    public:
+//       ~triangle();
+       double draw();
+       void setv(int v[]);
+    private:
+       point2d *ver;
+};
+#endif
+

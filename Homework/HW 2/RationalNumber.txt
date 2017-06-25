@@ -1,0 +1,27 @@
+#ifndef RATIONALNUMBER_H
+#define RATIONALNUMBER_H
+#include<iostream>
+using namespace std;
+class RationalNumber{
+public:
+    RationalNumber(int n,int d);
+    RationalNumber();
+     friend ostream &operator<<(ostream &,RationalNumber &);
+     RationalNumber operator+(RationalNumber &);
+     RationalNumber operator-(RationalNumber &);
+     RationalNumber operator*(RationalNumber &);
+     RationalNumber operator/(RationalNumber &);
+     int operator>(RationalNumber &);
+     int operator<(RationalNumber &);
+     int operator>=(RationalNumber &);
+     int operator<=(RationalNumber &);
+     int operator==(RationalNumber &);
+     int operator!=(RationalNumber &);
+
+private:
+    double numerator;
+    double denominator;
+};
+
+
+#endif

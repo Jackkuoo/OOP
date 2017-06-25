@@ -1,0 +1,20 @@
+#ifndef INTEGERSET_H
+#define INTEGERSET_H
+using namespace std;
+class IntegerSet{
+public:
+    int* getnumber(const IntegerSet &);
+    IntegerSet unionOfSets(IntegerSet s);
+    IntegerSet intersectionOfSets(IntegerSet s);
+    void insertElement(int k);
+    void deleteElement(int k);
+    friend ostream &operator<<(ostream &output,IntegerSet &p);
+    friend istream &operator>>(istream &input, IntegerSet &p);
+    int isEqualTo(IntegerSet s);
+    IntegerSet();
+    IntegerSet(int a[],int size);
+
+private:
+    int a[10][101];
+};
+#endif

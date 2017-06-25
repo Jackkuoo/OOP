@@ -1,0 +1,16 @@
+#ifndef POINT4D_H
+#define POINT4D_H
+class point4d:public point2d{
+
+public:
+    void display();
+    point4d(int a,int b,int c,int d);
+    int gett();
+    int getz();
+    void operator=(point2d &p);
+private:
+    int *z;
+    int *t;
+};
+#endif
+

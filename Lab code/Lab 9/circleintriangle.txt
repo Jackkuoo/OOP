@@ -1,0 +1,11 @@
+#ifndef CIRCLEINTRIANGLE_H
+#define CIRCLEINTRIANGLE_H
+
+class circleintriangle: public circle, public triangle
+    {
+    public:
+         circleintriangle(point2d &p,int r,int v[]);
+         void draw();
+         double area();
+    };
+#endif

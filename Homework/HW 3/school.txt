@@ -1,0 +1,23 @@
+#ifndef SCHOOL_H
+#define SCHOOL_H
+class student{
+public:
+    student();
+    int getid(int a);
+    void setid(int a,int b);
+    char getname(int a,int b);
+    void setname(int a,int b,char y);
+private:
+    int id[30];
+    char name[30][30];
+};
+class school{
+public:
+    school(char *a);
+    int report(char *a);
+private:
+    test t;
+    sport s;
+    student p;
+};
+#endif
